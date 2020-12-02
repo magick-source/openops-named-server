@@ -1,0 +1,5 @@
+# 
+
+RESOLVCONF=no
+OPTIONS="-u bind -t $NAMED_DIR"
+
