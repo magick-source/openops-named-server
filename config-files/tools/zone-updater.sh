@@ -35,11 +35,11 @@ fi
 
 rsync -rvu --delete "$ZONE_GITDIR/zones/" "$ZONE_DIR"
 
-if [! -f "$ZONE_DIR/lists.conf" ]; then
+if [! -f "$ZONE_GITDIR/lists.conf" ]; then
 
   cd "$ZONE_DIR"
-  for fname in (*.conf); do
-    echo "include \"$fname\";" >>lists.conf
+  for fname in *.conf; do
+    echo "include \"/zones/$fname\";" >>lists.conf
   done
 
 fi
