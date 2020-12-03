@@ -45,9 +45,9 @@ function render_file() {
   SOURCE=$1
   TARGET=$2
 
-  SOURCE="$OPENOPS_MAIL_DIR/config-files/$SOURCE"
+  SOURCE="$OPENOPS_NAMED_DIR/config-files/$SOURCE"
 
   say $YELLOW " -- rendering '$TARGET'"
-  envsubst $OPENOPS_MAIL_VARIABlES <$SOURCE >$TARGET
+  envsubst $OPENOPS_NAMED_VARIABlES <$SOURCE >$TARGET
 
 }
