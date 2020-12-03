@@ -7,7 +7,7 @@ set -e
 
 ZONE_DIR=${NAMED_DIR:-"$NAMED_DIR"}/zones
 
-ZONE_GITDIT=${ZONE_GITDIR:-"/root/git/zones"}
+ZONE_GITDIR=${ZONE_GITDIR:-"/root/git/zones"}
 
 if [ ! -d $ZONE_GITDIR ]; then
   ZONE_GIT=${1:-"$ZONE_GIT"}
