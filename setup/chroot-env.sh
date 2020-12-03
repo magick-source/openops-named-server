@@ -26,5 +26,7 @@ cp -v /etc/bind/bind.keys $NAMED_DIR/etc/bind/bind.keys
 
 cp -v /etc/bind/rndc.key $NAMED_DIR/etc/bind/rndc.key
 
+#TODO: fix the issues with apparmor and //run error
+
 say $BLUE "++ chroot environment done"
 
