@@ -35,7 +35,7 @@ fi
 
 rsync -rvu --delete "$ZONE_GITDIR/zones/" "$ZONE_DIR"
 
-if [! -f "$ZONE_GITDIR/lists.conf" ]; then
+if [ ! -f "$ZONE_GITDIR/lists.conf" ]; then
 
   cd "$ZONE_DIR"
   for fname in *.conf; do
