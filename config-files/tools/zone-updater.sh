@@ -22,6 +22,7 @@ if [ ! -d $ZONE_GITDIR ]; then
   mkdir -p $ZONE_GITDIR
   cd $ZONE_GITDIR
 
+  echo "Cloning '$ZONE_GIT' into '$ZONE_GITDIR'"
   git clone "$ZONE_GIT" .
 
 else 
