@@ -10,11 +10,16 @@ if [ -f "$HOME/.openops_named.cfg" ]; then
   . $HOME/.openops_named.cfg
 
 else
+  echo -n -e "$YELLOW Base directory for bind [/servers/named/]: "
+  read NAMED_DIR
+  export NAMED_DIR=${NAMED_DIR:-"/servers/named/"}
 
-  echo -e "$YELLOW -- config file not found. creating$NOCOLOR"
+  echo <<EoC >$HOME/.openops_named.cfg
 
-  echo -e "$RED TODO: ask for the config variables and store in file$NOCOLOR"
-  exit 1;
+export NAMED_DIR="$NAMED_DIR"
+
+EoC
+
 fi
 
 export NAMED_DIR=${NAMED_DIR:-"/server/named/"}
