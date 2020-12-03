@@ -14,7 +14,7 @@ else
   read NAMED_DIR
   export NAMED_DIR=${NAMED_DIR:-"/servers/named/"}
 
-  echo <<EoC >$HOME/.openops_named.cfg
+  echo >$HOME/.openops_named.cfg <<EoC
 
 export NAMED_DIR="$NAMED_DIR"
 
@@ -22,7 +22,7 @@ EoC
 
 fi
 
-export NAMED_DIR=${NAMED_DIR:-"/server/named/"}
+export NAMED_DIR=${NAMED_DIR:-"/servers/named/"}
 echo -e "$BLUE NAMED_DIR=$YELLOW$NAMED_DIR$NOCOLOR"
 
 
