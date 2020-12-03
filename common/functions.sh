@@ -48,6 +48,6 @@ function render_file() {
   SOURCE="$OPENOPS_NAMED_DIR/config-files/$SOURCE"
 
   say $YELLOW " -- rendering '$TARGET'"
-  envsubst $OPENOPS_NAMED_VARIABlES <$SOURCE >$TARGET
+  envsubst $OPENOPS_NAMED_VARIABLES <$SOURCE >$TARGET
 
 }
