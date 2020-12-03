@@ -4,7 +4,7 @@ set -e
 
 say $BLUE "\n\n\n>> Setting up chroot environment"
 
-create_directory $NAMED_DIR/etc/bin root
+create_directory $NAMED_DIR/etc/bind root
 
 create_directory $NAMED_DIR/dev root
 
