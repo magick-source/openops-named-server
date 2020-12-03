@@ -7,6 +7,7 @@ say $BLUE ">> Setting up zone updater"
 create_directory /root/tools root
 
 render_file tools/zone-updater.sh /root/tools/zone-updater.sh
+chmod +x /root/tools/zone-updater.sh
 
 if [ ! -z "$ZONE_GIT" ]; then
   say $BLUE " -->> Updating zones"
