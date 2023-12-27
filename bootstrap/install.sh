@@ -10,7 +10,7 @@ CYAN='\033[0;36m'
 BLUE='\033[1;34m'
 RED='\033[0;31m'
 
-OPENOPS_NAMED_GIT=${OPENOPS_NAMED_GIT:-"http://magick-source.net/OpenOps/named-server.git"}
+OPENOPS_NAMED_GIT=${OPENOPS_NAMED_GIT:-"https://github.com/magick-source/openops-named-server.git"}
 OPENOPS_NAMED_DIR=${OPENOPS_NAMED_DIR:-"/tmp/named-server"}
 
 check_yesno() {
